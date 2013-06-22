@@ -84,7 +84,7 @@ void ofxFenster::setup() {
 	ofAddListener(ofEvents().draw, this, &ofxFenster::draw);
 
 	ofxFensterListenerList::iterator it=listeners.begin();
-	ofNotifyEvent(ofEvents().setup, voidEventArgs);
+	//ofNotifyEvent(ofEvents().setup, voidEventArgs);
 	ofNotifyEvent(events.setup, voidEventArgs);
 
 	while(it!=listeners.end()) {
